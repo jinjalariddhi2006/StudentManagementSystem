@@ -1,0 +1,64 @@
+﻿@model IEnumerable<StudentManagementSystem.Models.Student>
+
+@{
+    ViewData["Title"] = "Student Directory";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>Student Directory</h2>
+            <p class="text-muted">Manage your student records</p>
+        </div>
+        <a asp-action="Create" class="btn btn-primary">+ Add Student</a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Enrollment No.</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var student in Model)
+                    {
+                        <tr>
+                            <td>@student.Name</td>
+                            <td>@student.EnrollmentNo</td>
+                            <td>@student.Email</td>
+                            <td>@student.Department</td>
+                            <td>@student.Semester</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@student.Id"
+                                   class="btn btn-sm btn-warning">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@student.Id"
+                                   class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">
+                            No students found. Click Add Student to begin.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

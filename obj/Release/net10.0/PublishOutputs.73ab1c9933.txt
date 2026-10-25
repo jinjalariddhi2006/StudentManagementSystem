@@ -1,0 +1,12 @@
+C:\Users\jinja\Desktop\StudentManagement_Publish\StudentManagementSystem.exe
+C:\Users\jinja\Desktop\StudentManagement_Publish\appsettings.Development.json
+C:\Users\jinja\Desktop\StudentManagement_Publish\appsettings.json
+C:\Users\jinja\Desktop\StudentManagement_Publish\StudentManagementSystem.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\StudentManagementSystem.runtimeconfig.json
+C:\Users\jinja\Desktop\StudentManagement_Publish\StudentManagementSystem.pdb
+C:\Users\jinja\Desktop\StudentManagement_Publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\MySqlConnector.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\jinja\Desktop\StudentManagement_Publish\StudentManagementSystem.deps.json
